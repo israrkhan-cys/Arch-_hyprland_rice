@@ -1,0 +1,62 @@
+# ===========================================
+# yazi Pro Keymap — Vim-like bindings
+# ===========================================
+
+[manager]
+prepend_keymap = [
+  # ── Navigation ──
+  { on = ["g", "h"], run = "cd ~", desc = "Go home" },
+  { on = ["g", "d"], run = "cd ~/Desktop", desc = "Go to Desktop" },
+  { on = ["g", "D"], run = "cd ~/Downloads", desc = "Go to Downloads" },
+  { on = ["g", "c"], run = "cd ~/.config", desc = "Go to config" },
+  { on = ["g", "v"], run = "cd ~/.vim_runtime", desc = "Go to vim config" },
+  { on = ["g", "p"], run = "cd ~/Projects", desc = "Go to Projects" },
+  { on = ["g", "t"], run = "cd /tmp", desc = "Go to /tmp" },
+
+  # ── Goto top/bottom ──
+  { on = ["g", "g"], run = "arrow -99999999", desc = "Go to top" },
+  { on = ["G"], run = "arrow 99999999", desc = "Go to bottom" },
+
+  # ── Shell ──
+  { on = ["!"], run = 'shell "$SHELL" --block --confirm', desc = "Open shell" },
+  { on = [";"], run = "shell --interactive", desc = "Run shell command" },
+
+  # ── Create / Rename ──
+  { on = ["a"], run = "create", desc = "Create file/dir" },
+  { on = ["r"], run = "rename --cursor=before_ext", desc = "Rename" },
+  { on = ["b", "r"], run = "shell 'vidir' --block --confirm", desc = "Bulk rename" },
+
+  # ── Copy path/name ──
+  { on = ["c", "p"], run = "copy path", desc = "Copy absolute path" },
+  { on = ["c", "d"], run = "copy dirname", desc = "Copy directory path" },
+  { on = ["c", "n"], run = "copy filename", desc = "Copy filename" },
+
+  # ── Selection ──
+  { on = ["v"], run = "select --state=none", desc = "Toggle select" },
+  { on = ["V"], run = "visual_mode", desc = "Visual mode" },
+
+  # ── Sorting ──
+  { on = ["s", "n"], run = "sort natural", desc = "Sort by name" },
+  { on = ["s", "s"], run = "sort size", desc = "Sort by size" },
+  { on = ["s", "m"], run = "sort modified", desc = "Sort by modified" },
+  { on = ["s", "e"], run = "sort extension", desc = "Sort by extension" },
+
+  # ── Filter / Search ──
+  { on = ["/"], run = "find --smart", desc = "Find" },
+  { on = ["f"], run = "filter --smart", desc = "Filter" },
+
+  # ── Tabs ──
+  { on = ["t", "n"], run = "tab_create --current", desc = "New tab" },
+  { on = ["t", "c"], run = "tab_close 0", desc = "Close tab" },
+  { on = ["["], run = "tab_switch -1 --relative", desc = "Previous tab" },
+  { on = ["]"], run = "tab_switch 1 --relative", desc = "Next tab" },
+  { on = ["1"], run = "tab_switch 0", desc = "Tab 1" },
+  { on = ["2"], run = "tab_switch 1", desc = "Tab 2" },
+  { on = ["3"], run = "tab_switch 2", desc = "Tab 3" },
+
+  # ── Hidden files ──
+  { on = ["."], run = "hidden toggle", desc = "Toggle hidden files" },
+
+  # ── Open in VS Code ──
+  { on = ["O"], run = 'shell "code $@" --confirm', desc = "Open in VS Code" },
+]

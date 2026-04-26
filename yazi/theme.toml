@@ -1,0 +1,45 @@
+# ===========================================
+# yazi Theme — Gruvbox Dark matching Ghostty
+# ===========================================
+
+[status]
+separator_open = ""
+separator_close = ""
+
+[filetype]
+rules = [
+  # Media
+  { mime = "image/*", fg = "#d3869b" },
+  { mime = "video/*", fg = "#d3869b" },
+  { mime = "audio/*", fg = "#d3869b" },
+
+  # Archives
+  { mime = "application/zip", fg = "#fe8019" },
+  { mime = "application/gzip", fg = "#fe8019" },
+  { mime = "application/x-tar", fg = "#fe8019" },
+  { mime = "application/x-bzip*", fg = "#fe8019" },
+  { mime = "application/x-7z-*", fg = "#fe8019" },
+  { mime = "application/x-rar", fg = "#fe8019" },
+
+  # Documents
+  { mime = "application/pdf", fg = "#fb4934" },
+  { mime = "application/*doc*", fg = "#83a598" },
+  { mime = "application/*sheet*", fg = "#8ec07c" },
+  { mime = "application/*presentation*", fg = "#d3869b" },
+
+  # Code / text
+  { mime = "text/*", fg = "#b8bb26" },
+  { mime = "application/json", fg = "#fabd2f" },
+  { mime = "application/javascript", fg = "#fabd2f" },
+  { mime = "application/x-yaml", fg = "#fabd2f" },
+  { mime = "application/toml", fg = "#fabd2f" },
+
+  # Executable
+  { mime = "application/x-mach-binary", fg = "#8ec07c" },
+  { mime = "application/x-executable", fg = "#8ec07c" },
+  { mime = "application/x-sharedlib", fg = "#8ec07c" },
+
+  # Fallback
+  { name = "*", fg = "#ebdbb2" },
+  { name = "*/", fg = "#83a598" },
+]

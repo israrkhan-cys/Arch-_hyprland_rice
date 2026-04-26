@@ -1,0 +1,68 @@
+# ===========================================
+# yazi Pro Config — iMac 27" 5K 2017
+# ===========================================
+
+[manager]
+ratio = [1, 3, 4]
+sort_by = "natural"
+sort_sensitive = false
+sort_reverse = false
+sort_dir_first = true
+linemode = "size"
+show_hidden = true
+show_symlink = true
+scrolloff = 5
+
+[preview]
+tab_size = 2
+max_width = 1000
+max_height = 1000
+image_filter = "triangle"
+image_quality = 75
+
+[opener]
+edit = [
+  { run = 'vim "$@"', block = true, for = "unix" },
+]
+open = [
+  { run = 'open "$@"', for = "macos" },
+]
+reveal = [
+  { run = 'open -R "$@"', for = "macos" },
+]
+code = [
+  { run = 'code "$@"', for = "macos" },
+]
+
+[open]
+rules = [
+  { mime = "text/*", use = ["edit", "code", "reveal"] },
+  { mime = "image/*", use = ["open", "reveal"] },
+  { mime = "video/*", use = ["open", "reveal"] },
+  { mime = "audio/*", use = ["open", "reveal"] },
+  { mime = "inode/x-empty", use = ["edit", "reveal"] },
+  { mime = "application/json", use = ["edit", "code", "reveal"] },
+  { mime = "application/x-yaml", use = ["edit", "code", "reveal"] },
+  { mime = "*/javascript", use = ["edit", "code", "reveal"] },
+  { name = "*.html", use = ["open", "edit", "code", "reveal"] },
+  { mime = "application/zip", use = ["open", "reveal"] },
+  { mime = "application/gzip", use = ["open", "reveal"] },
+  { mime = "application/x-tar", use = ["open", "reveal"] },
+  { mime = "application/pdf", use = ["open", "reveal"] },
+  { name = "*", use = ["open", "reveal"] },
+]
+
+[tasks]
+micro_workers = 10
+macro_workers = 25
+bizarre_retry = 5
+
+[plugin]
+prepend_previewers = [
+  # Code files — use bat for syntax-highlighted preview
+  { mime = "text/*", run = "code" },
+  { mime = "*/xml", run = "code" },
+  { mime = "*/javascript", run = "code" },
+  { mime = "*/x-wine-extension-ini", run = "code" },
+  { mime = "application/json", run = "code" },
+]
