@@ -1,5 +1,7 @@
 # Arch Hyprland Rice
 
+> If this repo helps you, please **star it** and **follow me on GitHub**: [@israrkhan-cys](https://github.com/israrkhan-cys)
+
 Personal dotfiles and desktop setup for **Arch Linux + Hyprland**.
 
 ## Overview
