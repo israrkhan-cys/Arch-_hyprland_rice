@@ -4,7 +4,7 @@
 
 Personal dotfiles and desktop setup for **Arch Linux + Hyprland**.
 
-##Preview
+## Preview
 ![ALT image](Previews/p1.png)
 
 ## Overview
