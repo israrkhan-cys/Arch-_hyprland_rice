@@ -4,6 +4,9 @@
 
 Personal dotfiles and desktop setup for **Arch Linux + Hyprland**.
 
+##Preview
+![ALT image](Previews/p1.png)
+
 ## Overview
 
 This repo contains my custom Hyprland rice: theme, workflow tweaks, and daily-driver desktop look.
