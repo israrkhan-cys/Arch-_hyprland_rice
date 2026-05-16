@@ -1,0 +1,221 @@
+/* Import Matugen colors */
+@import "colors.css";
+
+/* Global styles */
+* {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+#waybar {
+  border: none;
+  margin-top: 3px;
+  background-color: transparent;
+  color: @on_surface;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+#custom-icon,
+#workspaces,
+#temperature,
+#cpu,
+#memory,
+#battery,
+#backlight,
+#wireplumber,
+#custom-notification,
+#language,
+#clock,
+#network,
+#custom-power,
+#tray {
+  margin: 5px 4px;
+  padding: 0px 5px;
+}
+
+/* Custom icon (left) */
+#custom-icon {
+  color: @primary;
+  font-size: 18px;
+  margin-left: 5px;
+  padding: 0px 11px 0px 8px;
+}
+
+/* Workspaces */
+#workspaces {
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+#workspaces button {
+  color: @on_surface_variant;
+  margin: 0px 2px;
+  padding: 0px 4px;
+  border-radius: 0px;
+  border-bottom: 2px solid transparent;
+}
+
+#workspaces button.active {
+  color: @primary;
+  border-bottom: 2px solid @primary;
+}
+
+#workspaces button:hover {
+  color: @primary_fixed;
+}
+
+/* Temperature */
+#temperature {
+  color: @tertiary;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+/* CPU */
+#cpu {
+  color: @secondary;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+/* Memory */
+#memory {
+  color: @secondary;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+/* Battery */
+#battery {
+  color: @green;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+#battery.warning {
+  color: @yellow;
+}
+
+#battery.critical {
+  color: @error;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+/* Backlight */
+#backlight {
+  color: @tertiary;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+/* Wireplumber */
+#wireplumber {
+  color: @secondary;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+#wireplumber.muted {
+  color: @error;
+}
+
+/* Language */
+#language {
+  color: @on_surface;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+/* Network */
+#network {
+  color: @primary;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+#network.wifi {
+  color: @tertiary;
+}
+
+#network.ethernet {
+  color: @primary;
+}
+
+#network.disconnected {
+  color: @error;
+}
+
+/* Clock */
+#clock {
+  color: @primary;
+  background-color: @surface_container_high;
+  padding: 0px 10px;
+  border-radius: 12px;
+}
+
+#clock:hover {
+  background-color: @surface_container_highest;
+}
+
+/* Custom notification */
+#custom-notification {
+  color: @secondary;
+  padding: 0px 8px;
+  background-color: @surface_container_high;
+  border-radius: 12px;
+}
+
+/* Power */
+#custom-power {
+  color: @error;
+  padding: 0px 3px 0px 7px;
+}
+
+/* Tray */
+#tray {
+  background-color: @surface_container_high;
+  border-radius: 12px;
+  padding: 0px 8px;
+}
+
+/* Hover effects for all modules */
+#custom-icon:hover,
+#temperature:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#backlight:hover,
+#wireplumber:hover,
+#custom-notification:hover,
+#language:hover,
+#network:hover,
+#clock:hover,
+#custom-power:hover,
+#tray:hover {
+  background: @surface_container_highest;
+  border-radius: 12px;
+}
+
+/* Tooltip */
+tooltip {
+  background-color: @surface_container;
+  color: @on_surface;
+  border: 1px solid @primary;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
