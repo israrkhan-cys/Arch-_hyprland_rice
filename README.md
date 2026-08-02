@@ -6,6 +6,7 @@ Personal dotfiles and desktop setup for **Arch Linux + Hyprland**.
 
 ## Preview
 ![Desktop preview](Previews/p1.png)
+![Desktop preview](Previews/p2.png)
 
 ## Overview
 
@@ -17,6 +18,7 @@ This repo contains my personal Hyprland rice, including:
 - `yazi`
 - `fastfetch`
 - `starship`
+-  `radiq`
 - `.zshrc`
 
 ## Platform
@@ -34,6 +36,7 @@ This repo contains my personal Hyprland rice, including:
   starship/
   waybar/
   yazi/
+  radiq/
 .zshrc
 ```
 
@@ -46,11 +49,20 @@ Install the tools used by this rice before copying configs:
 - hypridle
 - waybar
 - kitty
+- radiq (App launcher)  
 - yazi
 - fastfetch
 - starship
 - zsh
 - rofi (used by waybar wifi script)
+
+## Radiq - App launcher
+A Wayland-native, game-inspired radial application launcher designed for Hyprland.
+
+link: [radiq](https://github.com/israrkhan-cys/radiq) 
+
+You can also install radiq using AUR helper  `yay` and `paru`.
+`yay -S radiq`
 
 ## Installation
 

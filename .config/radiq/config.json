@@ -1,0 +1,23 @@
+{
+    "animationDurationMs": 130,
+    "blurAmount": 10,
+    "borderColor": "#414868",
+    "borderHighlightColor": "#7AA2F7",
+    "fontFamily": "Inter, Roboto, sans-serif",
+    "hotkeyDisplay": "SUPER + A",
+    "iconSize": 56,
+    "pinnedApps": [
+        "google-chrome.desktop",
+        "konsole.desktop",
+        "blueman-manager.desktop",
+        "code.desktop",
+        "discord.desktop",
+        "gimp.desktop",
+        "btop.desktop",
+        "org.gnome.Nautilus.desktop"
+    ],
+    "ringInnerRadius": 100,
+    "ringOuterRadius": 230,
+    "wedgeColor": "#CC1F2335",
+    "wedgeHighlightColor": "#2D3F76"
+}
